@@ -1,22 +1,23 @@
-import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import Home from "./pages/Home";
-import Trips from "./pages/Trips";
-import TripDetails from "./pages/TripDetails";
-import Register from "./pages/Register";
-import About from "./pages/About";
-export default function App(){
-    return(
-        <Routes>
-       <Route element={<Layout />}>
-       <Route path="/" element={<Home />} />
-       <Route path="/trips" element={<Trips />} />
-       <Route path="/trips/:id" element={<TripDetails />} />
-       <Route path="/register" element={<Register />} />
-       <Route path="/about" element={<About />} />
-        
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout.jsx';
+import HomePage from './pages/HomePage.jsx';
+import TripsPage from './pages/TripsPage.jsx';
+import TripDetailsPage from './pages/TripDetailsPage.jsx';
+import RegisterPage from './pages/RegisterPage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
+
+export default function App() {
+  return (
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/trips" element={<TripsPage />} />
+        <Route path="/trips/:id" element={<TripDetailsPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
-    );
+  );
 }

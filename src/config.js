@@ -1,7 +1,9 @@
-/**
- * הגדרות כלליות של האתר.
- * כדי להחליף את שם האתר – משנים רק כאן.
- */
 export const SITE_NAME = 'שבילי ארץ';
-export const SITE_TAGLINE = 'יוצאים לטבע, מגלים מקומות חדשים ויוצרים חוויות בלתי נשכחות';
-export const CONTACT_EMAIL = 'info@example.com';
+export const CONTACT_EMAIL = 'info@shvilei-aretz.co.il'; // החליפי בכתובת האמיתית
+
+export const NAV_LINKS = [
+    { to: '/', label: 'דף הבית' },
+    { to: '/trips', label: 'כל המסלולים' },
+    { to: '/register', label: 'הרשמה לטיול' },
+    { to: '/about', label: 'אודות' },
+];

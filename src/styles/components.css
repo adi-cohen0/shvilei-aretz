@@ -1,0 +1,134 @@
+/* TripCard */
+.trip-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+}
+
+.trip-card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+}
+
+.trip-card-banner {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+}
+
+.trip-card-body {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trip-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    background: var(--green-100);
+    color: var(--green-800);
+    border-radius: 9999px;
+}
+
+.trip-card-level {
+    font-size: 0.875rem;
+    color: var(--slate-500);
+}
+
+.trip-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--slate-800);
+    margin-bottom: 8px;
+}
+
+.trip-card-summary {
+    font-size: 0.875rem;
+    color: var(--slate-600);
+    margin-bottom: 16px;
+}
+
+.trip-card-footer {
+    padding-top: 16px;
+    border-top: 1px solid var(--slate-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trip-card-stats {
+    font-size: 0.75rem;
+    color: var(--slate-500);
+}
+
+.trip-card-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--green-600);
+}
+
+.trip-card-link:hover {
+    color: var(--green-800);
+}
+
+/* CategoryCard */
+.category-card {
+    display: block;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    padding: 24px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.category-card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+}
+
+.category-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--slate-800);
+    margin-bottom: 8px;
+}
+
+.category-desc {
+    font-size: 0.875rem;
+    color: var(--slate-600);
+    margin-bottom: 12px;
+}
+
+.category-level {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--green-700);
+}

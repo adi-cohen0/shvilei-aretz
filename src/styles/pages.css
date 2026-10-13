@@ -1,0 +1,320 @@
+/* כלליים לדפים */
+.page {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 48px 16px;
+}
+
+.page-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--green-900);
+    text-align: center;
+}
+
+.page-title-spaced {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--green-900);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.page-subtitle {
+    color: var(--slate-600);
+    text-align: center;
+    margin: 8px 0 40px;
+}
+
+.section {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--slate-800);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.grid-3,
+.grid-trips {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-trips {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-trips {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* דף הבית */
+.hero {
+    background: linear-gradient(to bottom, var(--green-100), var(--slate-50));
+    padding: 80px 16px;
+    text-align: center;
+}
+
+.hero-icon {
+    font-size: 3.75rem;
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--green-900);
+    margin-bottom: 16px;
+}
+
+.hero-text {
+    font-size: 1.125rem;
+    color: var(--slate-600);
+    max-width: 36rem;
+    margin: 0 auto 32px;
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+/* פרטי מסלול */
+.details {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 40px 16px;
+}
+
+.details-back {
+    font-size: 0.875rem;
+    color: var(--green-600);
+}
+
+.details-back:hover {
+    color: var(--green-800);
+}
+
+.details-header {
+    margin-top: 16px;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+}
+
+.details-icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.details-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.stat {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    padding: 16px;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--slate-500);
+}
+
+.stat-value {
+    font-weight: 700;
+    color: var(--slate-800);
+}
+
+.panel {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.panel-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--green-900);
+    margin-bottom: 12px;
+}
+
+.panel-text {
+    color: var(--slate-700);
+    line-height: 1.7;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    color: var(--slate-700);
+}
+
+.info-list li+li {
+    margin-top: 12px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    background: var(--green-100);
+    color: var(--green-800);
+    font-size: 0.875rem;
+    padding: 4px 12px;
+    border-radius: 9999px;
+}
+
+.warning {
+    background: var(--amber-50);
+    border: 1px solid var(--amber-200);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.warning-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--amber-800);
+    margin-bottom: 8px;
+}
+
+.warning-list {
+    list-style: disc;
+    padding: 0 20px 0 0;
+    color: var(--amber-900);
+}
+
+.warning-list li+li {
+    margin-top: 4px;
+}
+
+.center-action {
+    text-align: center;
+    margin-top: 32px;
+}
+
+/* הודעות ממורכזות (תודה, לא נמצא) */
+.message-box {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 80px 16px;
+    text-align: center;
+}
+
+.message-icon {
+    font-size: 3.75rem;
+    margin-bottom: 16px;
+}
+
+.message-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--green-900);
+    margin-bottom: 8px;
+}
+
+.message-text {
+    color: var(--slate-600);
+    margin-bottom: 24px;
+}
+
+/* טופס הרשמה */
+.form-page {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 48px 16px;
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--slate-700);
+    margin-bottom: 4px;
+}
+
+.field-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--slate-200);
+    border-radius: 8px;
+    background: #fff;
+}
+
+.field-input:focus {
+    outline: none;
+    border-color: var(--green-600);
+}
+
+/* אודות */
+.about-page {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 48px 16px;
+}
+
+.about-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    padding: 32px;
+    color: var(--slate-700);
+    line-height: 1.7;
+}
+
+.about-card p+p {
+    margin-top: 16px;
+}
